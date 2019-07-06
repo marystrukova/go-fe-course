@@ -340,8 +340,7 @@ input[type="text"] {
     color: #999999;
 }
 
-input[type="button"] {
-    padding: 0;
+button {
     width: 150px;
     height: 42px;
     background-color: #95e1d3;
