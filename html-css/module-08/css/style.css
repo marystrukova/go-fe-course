@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Roboto:300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 320px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    padding: 21px 0px 139px;
+    background-image: url(../img/background-image.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.check_in {
+    font-family: 'Monserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ffffff;
+    background: transparent;
+    border: 2px solid transparent;
+    margin-bottom: 115px;
+    padding: 12px 18px 10px 19px;
+}
+
+.check_in:hover {
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+}
+
+.logo a {
+    font-family: 'Monserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+h2 {
+    font-family: 'Monserrat', sans-serif;
+    font-weight: 700;
+}
+
+.main_title {
+    font-size: 30px;
+    color: #ffffff; 
+    text-transform: uppercase;
+    margin-top: 38px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #ffffff;
+    width: 217px;
+    margin: 19px auto;
+}
+
+.find {
+    width: 278px;
+    height: 38px;
+    background-color: #ff4e50;
+    border: 1px solid #ff4e50;
+    border-radius: 25px;
+    font-family: 'Monserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+section {
+    padding: 68px 0px 105px;
+}
+
+.partner_title {
+    font-size: 22px;
+    color: #333333;
+}
+
+.partner-item {
+    width: 217px;
+    margin: 25px auto;
+}
+
+.image {
+    margin: 0 auto;
+    position: relative;
+    width: 123px;
+    height: 123px;
+}
+
+img {
+     border-radius: 50%; 
+}
+
+.image::before {
+    position: absolute;
+    display: block;
+    content: '';
+    right: 0;
+    bottom: 0;
+    width: 33px;
+    height: 33px;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon1::before {
+    background-color: #ff4e50;
+    background-image: url(../img/icon1.png);
+} 
+
+.icon2::before {
+    background-color: #ffa507;
+    background-image: url(../img/icon2.png);
+}
+
+.icon3::before {
+    background-color: #1cd7ad;
+    background-image: url(../img/icon3.png);
+}
+
+.icon4::before {
+    background-color: #4e73db;
+    background-image: url(../img/icon4.png);
+}
+
+h3 {
+    font-family: 'Monserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #333333;
+    padding: 20px 0px 16px;
+}
+
+span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #666666;
+}
+
+.see_others {
+    width: 280px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid #ff4e50;
+    border-radius: 25px;
+    font-family: 'Monserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ff4e50;
+}
+
