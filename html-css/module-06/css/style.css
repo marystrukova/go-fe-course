@@ -85,8 +85,7 @@ h2::after {
     width: 50px;
     height: 3px;
     background-color: #f38181;
-    margin: 0 auto;
-    margin-top: 40px;
+    margin: 40px auto;
 }
 
 .services {
@@ -172,10 +171,6 @@ h2::after {
 .team {
     display: flex;
     justify-content: space-between;
-}
-
-.team-item {
-    flex-basis: 380px;
 }
 
 .overlay-img {
