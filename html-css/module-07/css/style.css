@@ -163,10 +163,13 @@ h3 {
      padding-top: 75px; 
 }
 
+form {
+     padding-bottom: 115px;
+}
+
 .form {
      display: flex;
      justify-content: space-between;
-     padding-bottom: 115px;
 }
 
 .input {
