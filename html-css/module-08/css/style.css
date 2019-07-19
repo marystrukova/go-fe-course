@@ -7,7 +7,6 @@
 .container {
     width: 320px;
     margin: 0 auto;
-    text-align: center;
 }
 
 header {
@@ -17,6 +16,10 @@ header {
     background-repeat: no-repeat;
     width: 100vw;
 }
+
+nav {
+    text-align: center;
+} 
 
 .check_in {
     font-family: 'Monserrat', sans-serif;
@@ -42,6 +45,10 @@ header {
     text-decoration: none;
 }
 
+.banner {
+    text-align: center;
+}
+
 h2 {
     font-family: 'Monserrat', sans-serif;
     font-weight: 700;
@@ -51,7 +58,8 @@ h2 {
     font-size: 30px;
     color: #ffffff; 
     text-transform: uppercase;
-    margin-top: 38px;
+    margin: 38px auto 0;
+    line-height: 1.2;
 }
 
 p {
@@ -59,8 +67,8 @@ p {
     font-weight: 300;
     font-size: 18px;
     color: #ffffff;
-    width: 217px;
     margin: 19px auto;
+    width: 219px;
 }
 
 .find {
@@ -82,11 +90,20 @@ section {
 .partner_title {
     font-size: 22px;
     color: #333333;
+    text-align: center;
+    padding: 0 0 20px;
+}
+
+.partner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .partner-item {
-    width: 217px;
-    margin: 25px auto;
+    flex-basis: 230px;
+    margin-bottom: 28px;
+    text-align: center;
 }
 
 .image {
@@ -159,5 +176,88 @@ span {
     font-weight: 700;
     font-size: 14px;
     color: #ff4e50;
+    margin: 0 auto;
+    display: block;
 }
 
+/* @media (max-width: 747px) {
+    .container {
+        width: 320px;
+    }
+} */
+
+@media (min-width: 748px) {
+
+    .container {
+        width: 670px;
+    }
+
+    header {
+        padding-top: 38px;
+     }
+
+     nav {
+         display: flex;
+         flex-direction: row-reverse;
+         justify-content: space-between;
+         align-items: center;
+         margin: 0 auto 152px;
+     }
+
+     .check_in {
+         margin: 0;
+     }
+
+     .banner {
+        margin: 0 auto;
+        width: 492px;
+     }
+
+     .main_title {
+         font-size: 52px;
+     }
+
+     p {
+         font-size: 24px;
+         width: auto;
+     }
+
+    .partner-item {
+        flex-basis: 236px;
+        margin-bottom: 58px;
+    }
+
+    .partner-item:nth-child(-n+2) {
+        margin-right: 50px;
+    }
+    
+    .image {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        width: 120px;
+        height: 120px;
+    }
+    .partner-item:nth-child(2) {
+        order: 3;
+    }
+    .partner-item:nth-child(3) {
+        order: 2;
+    }
+    .partner-item:nth-child(4) {
+        order: 4;
+    }
+}
+
+@media (min-width: 940px) {
+
+    .container {
+        width: 940px;
+    }
+    .partner-item {
+        flex-basis: 220px;
+    }
+    .partner-item:not(:nth-child(4n)) {
+        margin-right: 20px;
+    }
+}
