@@ -10,11 +10,15 @@
 }
 
 header {
-    padding: 21px 0px 139px;
-    background-image: url(../img/background-image.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100vw;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Montserrat;
+    font-weight: 700;
+    color: #fff;
+    z-index: 10;
+    text-align: center;
 }
 
 nav {
@@ -46,7 +50,22 @@ nav {
 }
 
 .banner {
+    height: 540px;
     text-align: center;
+    position: relative;
+    background: url(../img/background-image.jpeg), rgb(26, 25, 21);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.banner-about {
+    position: absolute;
+    left: 50%;
+    top: 226px;
+    transform: translateX(-50%);
+    z-index: 8;
+    width: 320px;
 }
 
 h2 {
@@ -72,6 +91,8 @@ p {
 }
 
 .find {
+    display: inline-block;
+    text-decoration: none;
     width: 278px;
     height: 38px;
     background-color: #ff4e50;
@@ -81,6 +102,7 @@ p {
     font-weight: 700;
     font-size: 14px;
     color: #ffffff;
+    padding-top: 12px;
 }
 
 section {
@@ -167,6 +189,8 @@ span {
 }
 
 .see_others {
+    display: block;
+    text-decoration: none;
     width: 280px;
     height: 40px;
     background-color: transparent;
@@ -177,7 +201,8 @@ span {
     font-size: 14px;
     color: #ff4e50;
     margin: 0 auto;
-    display: block;
+    padding-top: 10px;
+    text-align: center;
 }
 
 /* @media (max-width: 747px) {
@@ -209,6 +234,10 @@ span {
      }
 
      .banner {
+         height: 700px;
+     }
+
+     .banner-about {
         margin: 0 auto;
         width: 492px;
      }
