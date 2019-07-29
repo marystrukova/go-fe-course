@@ -19,10 +19,6 @@
   flex-basis: 230px;
 }
 
-.button {
-  width: 280px !important; 
-}
-
 .container {
   min-width: 320px;
   padding-right: 15px;
