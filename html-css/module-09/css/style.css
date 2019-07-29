@@ -116,7 +116,7 @@ header {
     flex-wrap: wrap;
 } */
 .partners-item {
-    flex-basis: 230px;
+    /* flex-basis: 230px; */
     margin-bottom: 28px;
 }
 .partners-item-img {
