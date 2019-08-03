@@ -1,0 +1,16 @@
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu__item:not(last-child) {
+    margin-right: 55px;
+}
+
+.menu__link {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
