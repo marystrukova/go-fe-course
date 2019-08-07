@@ -34,10 +34,18 @@
                         <a href="#" class="menu__link">contact</a>
                     </li>
                     <li class="menu__item menu__item--active">
-                        <a href="#" class="menu__link"></a>
+                        <a href="#" class="menu__link">
+                            <svg class="menu__icon" width="18" height="18">
+                                <use href="img/symbol-defs.svg#SHOPPING-CART"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="menu__item menu__item--active">
-                        <a href="#" class="menu__link"></a>
+                        <button class="menu__button">
+                            <svg class="menu__icon" width="18" height="18">
+                                <use href="img/symbol-defs.svg#MAGNIFYING-GLASS"></use>
+                            </svg>
+                        </button>
                     </li>
                 </ul>
         </nav>
@@ -54,42 +62,60 @@
 
     <ul class="services">
         <li class="services-item">
-            <img src="img/icon-alarm.png" alt="" class="services__icon" height="32" width="32">
+            <svg class="services__icon" width="34" height="34">
+                <use href="img/symbol-defs.svg#ALARM-1"></use>
+            </svg>
+            <!-- <img src="img/icon-alarm.png" alt="" class="services__icon" height="32" width="32"> -->
             <div class="services-about">
             <h3 class="services__title">Photography</h3>
             <p class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
             </div>
         </li>
         <li class="services-item">
-            <img src="img/icon-line.png" alt="" class="services__icon" height="32" width="32">
+            <svg class="services__icon" width="32" height="32">
+                <use href="img/symbol-defs.svg#LINE-GRAPH-1"></use>
+            </svg>
+            <!-- <img src="img/icon-line.png" alt="" class="services__icon" height="32" width="32"> -->
             <div class="services-about">
             <h3 class="services__title">Web Design</h3>
             <p class="services__text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
             </div>
         </li>
         <li class="services-item">
-            <img src="img/icon-computer.png" alt="" class="services__icon" height="32" width="32">
+            <svg class="services__icon" width="32" height="32">
+                <use href="img/symbol-defs.svg#COMPUTER-_-OK-1"></use>
+            </svg>
+            <!-- <img src="img/icon-computer.png" alt="" class="services__icon" height="32" width="32"> -->
             <div class="services-about">
             <h3 class="services__title">Creativity</h3>
             <p class="services__text">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
             </div>
         </li>
         <li class="services-item">
-            <img src="img/icon-book.png" alt="" class="services__icon" height="32" width="32">
+            <svg class="services__icon" width="32" height="32">
+                <use href="img/symbol-defs.svg#BOOK-2"></use>
+            </svg>
+            <!-- <img src="img/icon-book.png" alt="" class="services__icon" height="32" width="32"> -->
             <div class="services-about">
             <h3 class="services__title">seo</h3>
             <p class="services__text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
             </div>
         </li>
         <li class="services-item">
-            <img src="img/icon-home.png" alt="" class="services__icon" height="32" width="32">
+            <svg class="services__icon" width="32" height="32">
+                <use href="img/symbol-defs.svg#HOME"></use>
+            </svg>
+            <!-- <img src="img/icon-home.png" alt="" class="services__icon" height="32" width="32"> -->
             <div class="services-about">
             <h3 class="services__title">Css/Html</h3>
             <p class="services__text">Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.</p>
             </div>
         </li>
         <li class="services-item">
-            <img src="img/icon-image.png" alt="" class="services__icon" height="32" width="32">
+            <svg class="services__icon" width="32" height="32">
+                <use href="img/symbol-defs.svg#IMAGE"></use>
+            </svg>
+            <!-- <img src="img/icon-image.png" alt="" class="services__icon" height="32" width="32"> -->
             <div class="services-about">
             <h3 class="services__title">digital</h3>
             <p class="services__text">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
@@ -105,20 +131,39 @@
             <div class="team-overlay-img">
                 <ul class="social">
                     <li class="social-icon">
-                        <a href="#" class="social-icon__link">facebook</a>
+                        <a href="#" class="social-icon-link">
+                            <svg class="social-icon__img social-icon__img--active" width="13" height="26">
+                                <use href="img/symbol-defs.svg#facebook"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="social-icon">
-                        <a href="#" class="social-icon__link">twitter</a>
+                        <a href="#" class="social-icon-link">
+                            <svg class="social-icon__img social-icon__img--active" width="26" height="22">
+                                <use href="img/symbol-defs.svg#twitter"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="social-icon">
-                        <a href="#" class="social-icon__link">pinterest</a>
+                        <a href="#" class="social-icon-link">
+                            <svg class="social-icon__img social-icon__img--active" width="21" height="26">
+                                <use href="img/symbol-defs.svg#pinterest"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="social-icon">
-                        <a href="#" class="social-icon__link">instagram</a>
+                        <a href="#" class="social-icon-link">
+                            <svg class="social-icon__img social-icon__img--active" width="26" height="26">
+                                <use href="img/symbol-defs.svg#instagram"></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
                 <div class="team-overlay">
-                    <img src="img/image1.jpeg" alt="" class="team-img" width="383" height="473">
+                    <img class="team-img" width="383" height="473" 
+                        srcset="img/image1.jpeg 383w, img/image1@2x.jpeg 766w"
+                        src="img/image1.jpeg" 
+                        alt="">
                 </div>
                 </div>
                 <div class="team-info">
@@ -130,20 +175,39 @@
             <div class="team-overlay-img">
                 <ul class="social">
                     <li class="social-icon">
-                        <a href="#" class="social-icon__link">facebook</a>
+                        <a href="#" class="social-icon-link">
+                            <svg class="social-icon__img social-icon__img--active" width="13" height="26">
+                                <use href="img/symbol-defs.svg#facebook"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="social-icon">
-                        <a href="#" class="social-icon__link">twitter</a>
+                        <a href="#" class="social-icon-link">
+                            <svg class="social-icon__img social-icon__img--active" width="26" height="22">
+                                <use href="img/symbol-defs.svg#twitter"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="social-icon">
-                        <a href="#" class="social-icon__link">pinterest</a>
+                        <a href="#" class="social-icon-link">
+                            <svg class="social-icon__img social-icon__img--active" width="21" height="26">
+                                <use href="img/symbol-defs.svg#pinterest"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="social-icon">
-                        <a href="#" class="social-icon__link">instagram</a>
+                        <a href="#" class="social-icon-link">
+                            <svg class="social-icon__img social-icon__img--active" width="26" height="26">
+                                <use href="img/symbol-defs.svg#instagram"></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
                 <div class="team-overlay">
-                    <img src="img/image2.jpeg" alt="" class="team-img" width="383" height="473">
+                    <img class="team-img" width="383" height="473"
+                        srcset="img/image2.jpeg 383w, img/image2@2x.jpeg 766w" 
+                        src="img/image2.jpeg" 
+                        alt="">
                 </div>
                 </div>
                 <div class="team-info">
@@ -155,20 +219,39 @@
             <div class="team-overlay-img">
                 <ul class="social">
                     <li class="social-icon">
-                        <a href="#" class="social-icon__link">facebook</a>
+                        <a href="#" class="social-icon-link">
+                            <svg class="social-icon__img social-icon__img--active" width="13" height="26">
+                                <use href="img/symbol-defs.svg#facebook"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="social-icon">
-                        <a href="#" class="social-icon__link">twitter</a>
+                        <a href="#" class="social-icon-link">
+                            <svg class="social-icon__img social-icon__img--active" width="26" height="22">
+                                <use href="img/symbol-defs.svg#twitter"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="social-icon">
-                        <a href="#" class="social-icon__link">pinterest</a>
+                        <a href="#" class="social-icon-link">
+                            <svg class="social-icon__img social-icon__img--active" width="21" height="26">
+                                <use href="img/symbol-defs.svg#pinterest"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="social-icon">
-                        <a href="#" class="social-icon__link">instagram</a>
+                        <a href="#" class="social-icon-link">
+                            <svg class="social-icon__img social-icon__img--active" width="26" height="26">
+                                <use href="img/symbol-defs.svg#instagram"></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
                 <div class="team-overlay">
-                    <img src="img/image3.jpeg" alt="" class="team-img" width="383" height="473">
+                    <img class="team-img" width="383" height="473"
+                        srcset="img/image3.jpeg 383w, img/image3@2x.jpeg 766w"
+                        src="img/image3.jpeg" 
+                        alt="">
                 </div>
                 </div>
                 <div class="team-info">

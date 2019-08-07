@@ -13,6 +13,8 @@
 }
 
 .overlay {
+    background: -o-linear-gradient(bottom, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9)));
     background: linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
 }
 
@@ -27,8 +29,12 @@ header {
 }
 
 nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .logo__link {
@@ -40,11 +46,13 @@ nav {
 }
 
 .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style: none;
 }
 
-.menu__item:not(last-child) {
+.menu__item:not(:last-child) {
     margin-right: 55px;
 }
 
@@ -71,8 +79,17 @@ nav {
     color: #fce38a;
 }
 
-.menu__link:focus {
-    color: #fce38a;
+.menu__button {
+    border: none;
+    background: transparent;
+}
+
+.menu__icon {
+    fill: #fff;
+}
+
+.menu__icon:hover {
+    fill: #fce38a;
 }
 
 .title {
@@ -138,20 +155,30 @@ nav {
 
 .services {
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-top: 66px;
 
 }
 
 .services-item {
-    flex-basis: 373px;
+    -ms-flex-preferred-size: 373px;
+        flex-basis: 373px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 95px;
 }
 
 .services-item:not(:nth-child(3n)) {
     margin-right: 20px;
+}
+
+.services__icon {
+    fill: #95e1d3;
 }
 
 .services-about {
@@ -180,6 +207,8 @@ nav {
 }
 
 .team {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style: none;
 
@@ -198,6 +227,8 @@ nav {
 }
 
 .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style: none;
 }
@@ -206,8 +237,12 @@ nav {
     position: relative;
     top: 0;
     left: 0;
+    -webkit-transition-property: left, top;
+    -o-transition-property: left, top;
     transition-property: left, top;
-    transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+         -o-transition-duration: 0.2s;
+            transition-duration: 0.2s;
 }
 
 .team-item:hover .team-overlay {
@@ -224,9 +259,15 @@ nav {
 }
 
 .social {
+    -webkit-transition-property: visibility, left, top, right, bottom;
+    -o-transition-property: visibility, left, top, right, bottom;
     transition-property: visibility, left, top, right, bottom;
-    transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+         -o-transition-duration: 0.2s;
+            transition-duration: 0.2s;
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     visibility: hidden;
     top: 0;
@@ -234,48 +275,60 @@ nav {
     bottom: 0;
     right: 0;
     z-index: 5;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: -o-linear-gradient(bottom, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9)));
     background: linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
     padding-left: 0;
 }
 
 .social-icon {
+    background-color: #fce38a;
     width: 56px;
     height: 56px;
     font-size: 0px;
+    -webkit-transition-property: background-color;
+    -o-transition-property: background-color;
     transition-property: background-color;
-    transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+         -o-transition-duration: 0.2s;
+            transition-duration: 0.2s;
 }
 
 .social-icon:not(:last-child) {
     margin-right: 2px;
 }
 
-.social-icon:nth-of-type(1) {
-    background: url(../img/facebook.png) no-repeat center #fce38a;
-}
-
-.social-icon:nth-of-type(2) {
-    background: url(../img/twitter.png) no-repeat center #fce38a;
-}
-
-.social-icon:nth-of-type(3) {
-    background: url(../img/pinterest.png) no-repeat center #fce38a;
-}
-
-.social-icon:nth-of-type(4) {
-    background: url(../img/instagram.png) no-repeat center #fce38a;
-}
-
 .social-icon:hover {
-    background-color: #95e1d3;
+    background-color: #f38181;
 }
 
-.social-icon__link {
+.social-icon:hover .social-icon__img--active {
+    fill: #fff;
+}
+
+.social-icon-link {
     display: block;
     width: 56px;
     height: 56px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.social-icon__img {
+    fill: #f38181;
 }
 
 .team-info {
@@ -302,8 +355,12 @@ nav {
 .footer {
     border-top: 1px solid #e5e5e5;
     margin-top: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .footer-text {
@@ -322,6 +379,8 @@ nav {
 
 .footer-form {
     margin: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -337,6 +396,22 @@ nav {
     font-size: 15px;
     font-style: italic;
     color: #333333;
+}
+
+.footer-form_input::-webkit-input-placeholder {
+    color: #e5e5e5;
+}
+
+.footer-form_input::-moz-placeholder {
+    color: #e5e5e5;
+}
+
+.footer-form_input:-ms-input-placeholder {
+    color: #e5e5e5;
+}
+
+.footer-form_input::-ms-input-placeholder {
+    color: #e5e5e5;
 }
 
 .footer-form_input::placeholder {
@@ -355,10 +430,22 @@ nav {
     text-transform: uppercase;
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .banner-image {
+        background-image: url(../img/banner@2X.jpeg);
+    }
+}
 
-
-
-
+/* .SHOPPING_CART {
+    background-color: rgb( 255, 255, 255 );
+    position: absolute;
+    left: 1484px;
+    top: 37px;
+    width: 18px;
+    height: 15px;
+    z-index: 13;
+  } */
+  
 
 
 
