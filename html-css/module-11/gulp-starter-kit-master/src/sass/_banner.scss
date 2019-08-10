@@ -1,8 +1,8 @@
 .banner {
   height: 1000px;
-  background: $gradient, url(../img/Background.jpg) center/cover no-repeat;
+  background: $gradient, url(../images/banner.jpg) center/cover no-repeat;
   @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background: $gradient, url(../img/Background@2x.jpg) center/cover no-repeat;
+    background: $gradient, url(../images/banner@2x.jpg) center/cover no-repeat;
   }
 }
 
