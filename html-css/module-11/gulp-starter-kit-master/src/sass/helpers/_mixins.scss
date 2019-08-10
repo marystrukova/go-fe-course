@@ -1,0 +1,50 @@
+@mixin flex-align ($type) {
+  @if $type == 'center' {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+
+  @else if $type == 'between-center' {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @else if $type == 'around-center' {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  @else if $type == 'around' {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  @else if $type == 'between' {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @else if $type == 'align-center' {
+    display: flex;
+    align-items: center;
+  }
+
+  @else if $type == 'justify-center' {
+    display: flex;
+    justify-content: center;
+  }
+
+  @else if $type == 'justify-end' {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @else if $type == 'end-center' {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}

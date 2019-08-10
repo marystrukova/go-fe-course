@@ -1,0 +1,54 @@
+    
+%link {
+  text-decoration: none;
+}
+
+%list {
+  list-style: none;
+}
+
+%container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+%visually-hidden {
+  &:not(:focus):not(:active),
+  input[type="checkbox"].visually-hidden,
+  input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    bottom: 0px;
+    padding: 0px;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+  
+%italic-font {
+  font-family: "Kaushan";
+  font-weight: normal;
+}
+
+%main-font-bold {
+  font-family: "Montserrat Bold";
+  text-transform: uppercase;
+}
+
+%main-font-reg {
+  font-family: "Montserrat Regular";
+  text-transform: uppercase;
+}
+
+%second-font {
+  font-family: "Roboto Regular";
+}
+
+%second-font-italic {
+  font-family: "Roboto Italic";
+}

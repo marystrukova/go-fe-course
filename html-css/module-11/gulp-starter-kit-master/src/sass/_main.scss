@@ -1,0 +1,37 @@
+.item-header {
+  color: $font-col-main;
+  @extend %main-font-reg;
+  font-size: $small-font;
+  margin-bottom: 18px;
+}
+
+.block-header {
+  text-align: center;
+  padding-bottom: 94px;
+  color: $font-col-main;
+
+  &__span {
+    display: block;
+    @extend %italic-font;
+    font-size: $sm-font;
+    text-transform: none;
+    margin-bottom: 20px;
+  }
+
+  &__main {
+    position: relative;
+    @extend %main-font-bold;
+    font-size: 30px;
+
+    &::before {
+      position: absolute;
+      top: 108px;
+      left: 50%;
+      transform: translate(-50%);
+      content: "";
+      width: 50px;
+      height: 4px;
+      background-color: $hover-color;
+    }
+  }
+}

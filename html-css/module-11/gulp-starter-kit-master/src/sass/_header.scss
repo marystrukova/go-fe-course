@@ -1,0 +1,82 @@
+header {
+  @extend %container;
+  @include flex-align ('between-center');
+  padding: 40px 0px;
+}
+
+.logo__link {
+  @extend %link;
+  @extend %main-font-bold;
+  color: $white-color;
+  font-size: $mid-font;
+  transition-property: color;
+  transition-duration: $transition-duration;
+
+  &:hover {
+    color: $second-hover-color;
+  }
+}
+
+.main-navigation {
+  @extend %list;
+  @include flex-align ('end-center');
+
+  &__link {
+    @extend %link;
+    color: $white-color;
+
+    &:hover, &:focus {
+      color: $second-hover-color;
+    }
+  }
+
+  &__button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  &__icon {
+    fill: $white-color;
+
+    &:hover {
+      fill: $second-hover-color;
+    }
+  }
+}
+
+.main-navigation__item {
+  @extend %main-font-reg;
+  position: relative;
+  color: $white-color;
+  font-size: $small-font;
+  transition-property: color;
+  transition-duration: $transition-duration;
+  margin-right: 58px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 38px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 4px;
+    background-color: $second-hover-color;
+    opacity: 0;
+    z-index: 3;
+    transition-property: opacity;
+    transition-duration: $transition-duration;
+  }
+
+  &:hover {
+    &::before {
+      opacity: 1;
+    }
+  }
+}

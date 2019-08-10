@@ -1,0 +1,43 @@
+.footer {
+  @extend %container;
+  @include flex-align ('between-center');
+  padding: 12px 0px;
+  color: $font-col-main;
+  @extend %main-font-reg;
+  text-transform: none;
+  font-size: $small-font;
+  border-top: 1px solid $border-col-main;
+}
+
+.developer {
+  color: $hover-color;
+}
+
+.email-form {
+  @include flex-align ('justify-end');
+}
+
+.email-form__input {
+  width: 230px;
+  height: 40px;
+  padding: 0 14px;
+  border: 1px solid $border-col-main;
+  border-right: none;
+}
+
+.email-form__input::placeholder {
+  color: $placeholder-color;
+  @extend %second-font-italic;
+  font-size: $small-font;
+  line-height: 24px;
+}
+  
+.email-form__button {
+  background-color: $main-color;
+  border: none;
+  @extend %main-font-bold;
+  font-size: $small-font;
+  color: $white-color;
+  padding: 12px 34px;
+  cursor: pointer;
+}

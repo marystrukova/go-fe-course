@@ -1,0 +1,36 @@
+.services {
+  padding-top: 52px;
+}
+  
+.services__list {
+  @extend %list;
+  @include flex-align ('around');
+  flex-wrap: wrap;
+}
+
+.services__item {
+  flex-basis: 380px;
+  position: relative;
+  @include flex-align ('between');
+
+  &:not(:nth-last-of-type(-n + 3)) {
+    margin-bottom: 100px;
+  }
+}
+
+.services__img {
+  flex: 0 0 84px;
+  @include flex-align ('justify-center');
+  margin-top: 14px;
+}
+
+.services__icon {
+  fill: $main-color;
+}
+  
+.services__text {
+  color: $font-col-second;
+  @extend %second-font;
+  font-size: $small-font;
+  line-height: 24px;
+}
