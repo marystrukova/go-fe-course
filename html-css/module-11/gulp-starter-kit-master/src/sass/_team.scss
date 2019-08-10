@@ -77,12 +77,19 @@
      
   &:hover {
     background-color: $hover-color;
+  }
 
-    .social-icon__svg {
-      fill: $second-hover-color;
-    }
+  .social-icon__svg {
+    fill: $hover-color;
   }
 }
+
+.social-icon {
+  &:hover .social-icon__svg {
+    fill: $white-color;
+  }
+}
+
 
 .social-icon a {
   @include flex-align ('center');
